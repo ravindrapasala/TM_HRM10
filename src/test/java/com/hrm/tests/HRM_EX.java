@@ -44,8 +44,17 @@ public class HRM_EX {
 		driver.findElement(By.xpath("//*[@id='btnLogin']")).click();
 		Thread.sleep(2000);
 	}
-	@AfterMethod
 	
+	
+@Test(priority=3)
+	
+	public void verifylogin12() throws InterruptedException
+	{
+		System.out.println("Change code");
+	}
+
+	
+	@AfterMethod
 	public void quitbrowser()
 	{
 		driver.quit();
